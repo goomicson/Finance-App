@@ -8,7 +8,7 @@
 import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var background: UIView!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var spendOrProfit: UIView!
@@ -24,5 +24,5 @@ class HistoryTableViewCell: UITableViewCell {
         background.layer.shadowRadius = 4
         spendOrProfit.layer.cornerRadius = spendOrProfit.frame.height / 2
     }
-
+    
 }

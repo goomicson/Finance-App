@@ -42,18 +42,18 @@ class SubscribtionTableViewController: UITableViewController {
         cell.sumLable.text = "\(Int(nameSubscription.amount)) \(Exchange.ruble.rawValue)"
         return cell
     }
-        
-     // MARK: - Navigation
-     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         guard let newSubVC = segue.destination as? NewSubscriptionViewController else { return }
-         newSubVC.newSubscription = subscription
-     }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let newSubVC = segue.destination as? NewSubscriptionViewController else { return }
+        newSubVC.newSubscription = subscription
+    }
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         guard let newSubVC =  unwindSegue.source as? NewSubscriptionViewController else {return}
         subscription = newSubVC.pressdOK()
         tableView.reloadData()
-        }
+    }
     
-
+    
 }

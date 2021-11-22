@@ -9,7 +9,6 @@ import UIKit
 
 class NewAccumulationViewController: UIViewController {
     
-    @IBOutlet var sumPerMonthLabel: UILabel!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var currencySegment: UISegmentedControl!
     @IBOutlet var accumulationAmountTF: UITextField!
@@ -34,11 +33,11 @@ class NewAccumulationViewController: UIViewController {
         var currency: Exchange
         switch currencySegment.selectedSegmentIndex{
         case 0:
-             currency = Exchange.euro
+            currency = Exchange.euro
         case 1:
-             currency = Exchange.dollar
+            currency = Exchange.dollar
         default:
-             currency = Exchange.ruble
+            currency = Exchange.ruble
         }
         return currency
     }
@@ -47,7 +46,7 @@ class NewAccumulationViewController: UIViewController {
         let totalAmount:Double = Double(accumulationAmountTF.text ?? "") ?? 0.0
         let mount: Int = Int(mounthTF.text ?? "") ?? 0
         newAccumulation.append(Accumulation(name: nameTF.text ?? "", totalAmount: Int(totalAmount), dayOfProfit: Date.now, duration: mount, exchange: currencySelection()))
-       
+        
         return newAccumulation
         
     }

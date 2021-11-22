@@ -2,7 +2,7 @@
 //  MyPlansViewController.swift
 //  Swiftbook_BudgetHelperProject
 //
-//  Created by Сергей on 14.11.2021.
+//  Created by Варвара Фомина on 14.11.2021.
 //
 
 import UIKit

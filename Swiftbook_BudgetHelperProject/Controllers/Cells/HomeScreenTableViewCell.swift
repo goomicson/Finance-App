@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeScreenTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var background: UIView!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
@@ -23,7 +23,7 @@ class HomeScreenTableViewCell: UITableViewCell {
         background.layer.shadowOffset = .init(width: 0, height: 3)
         background.layer.shadowRadius = 4
     }
-   
+    
     
     
 }

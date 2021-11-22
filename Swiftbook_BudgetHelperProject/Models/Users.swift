@@ -2,7 +2,7 @@
 //  Users.swift
 //  Swiftbook_BudgetHelperProject
 //
-//  Created by Сергей on 20.11.2021.
+//  Created by Shevshelev Lev on 20.11.2021.
 //
 
 import Foundation
